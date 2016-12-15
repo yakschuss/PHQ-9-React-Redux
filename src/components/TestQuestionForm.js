@@ -4,7 +4,7 @@ const TestQuestionForm = React.createClass({
   render () {
     return (
       <div className='test-question-form'>
-        <form className='question-form' >
+        <form className='question-form' onSubmit={this.props.handleSubmit} >
           <div className='selection'>
             <input className='radio-select' type='radio' id='notAtAll' name='test-response' value='0' />
             <label className='test-response' htmlFor='notAtAll'>Not At All</label>
