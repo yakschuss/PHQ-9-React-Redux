@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainWrapper = (props) => {
   return (
-    <div className="main-wrapper">
+    <div className='main-wrapper'>
       { props.children }
     </div>
   )
@@ -14,6 +14,5 @@ MainWrapper.propTypes = {
   children: element.isRequired
 }
 
-
-export default MainWrapper;
+export default MainWrapper
 
