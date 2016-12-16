@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
-import { store } from './redux/reducers'
-import { Provider } from 'react-redux'
-import MainWrapper from './wrappers/MainWrapper'
+import React, { Component } from 'react';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { store } from './redux/reducers';
+import { Provider } from 'react-redux';
 
-import Landing from './components/Landing'
-import Test from './components/Test'
+import MainWrapper from './wrappers/MainWrapper';
+
+import Landing from './components/Landing';
+import Test from './components/Test';
 import Result from './components/Result';
-import './App.css'
-
+import Thanks from './components/Thanks';
+import './App.css';
 
 class App extends Component {
   render () {
@@ -20,13 +21,14 @@ class App extends Component {
               <IndexRoute component={Landing} />
               <Route path='/test' component={Test} />
               <Route path='/result' component={Result} />
+              <Route path='/thanks' component={Thanks} />
             </Route>
           </Router>
         </Provider>
       </div>
 
-    )
+    );
   }
 }
 
-export default App
+export default App;

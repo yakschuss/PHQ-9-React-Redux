@@ -156,7 +156,7 @@ html, body{
 }
 
 .result-button {
-  height: 50px;
+  height: 70px;
   background-color: #34a853;
   color: #fff;
   width: 170px;
@@ -164,6 +164,8 @@ html, body{
   border: none;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 30px;
 }
 .result-button:hover {
   background-color: white;
@@ -222,6 +224,17 @@ html, body{
   margin-top: 30px;
 }
 
+/* Thanks */
+
+.thank-you {
+  font-size: 50px;
+  color: #82318A;
+}
+
+
+.hidden {
+  display: none;
+}
 
 
 

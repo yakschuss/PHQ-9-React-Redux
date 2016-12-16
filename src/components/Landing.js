@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Link } from 'react-router';
 
 const Landing = React.createClass({
   render () {
@@ -15,9 +15,9 @@ const Landing = React.createClass({
           </Link>
         </div>
       </div>
-    )
+    );
   }
-})
+});
 
-export default Landing
+export default Landing;
 

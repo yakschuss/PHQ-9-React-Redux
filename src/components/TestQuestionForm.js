@@ -1,13 +1,21 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import SubmitForm from './SubmitForm'
+import React from 'react';
+import { connect } from 'react-redux';
+import SubmitForm from './SubmitForm';
 
 const TestQuestionForm = React.createClass({
   render () {
+    let testQuestion;
+
+    if (this.props.continue) {
+       testQuestion = 'selection'
+    } else {
+       testQuestion = 'selection hidden'
+    }
+
     return (
       <div className='test-question-form'>
         <form className='question-form' onSubmit={this.props.handleSubmit} >
-          <div className='selection'>
+          <div className={testQuestion}>
             <input className='radio-select' type='radio' id='notAtAll' name='test-response' value='0' />
             <label className='test-response' htmlFor='notAtAll'>Not At All</label>
 
@@ -26,15 +34,15 @@ const TestQuestionForm = React.createClass({
         </form>
 
       </div>
-    )
+    );
   }
-})
+});
 
 const mapStateToProps = (state) => {
   return {
     continue: state.continue
-  }
-}
+  };
+};
 
-export default connect(mapStateToProps)(TestQuestionForm)
+export default connect(mapStateToProps)(TestQuestionForm);
 

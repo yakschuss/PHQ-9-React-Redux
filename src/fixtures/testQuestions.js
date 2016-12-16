@@ -8,4 +8,4 @@ export const questions = [
   'Trouble concentrating on things, such as reading the newspaper or watching television?',
   'Moving or speaking so slowly that other people could have noticed, Or the opposite, being so fidgety or restless that you have been moving around alot more than usual?',
   'Thoughts that you would be better off dead, or of hurting yourself in some way?'
-]
+];

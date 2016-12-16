@@ -1,5 +1,5 @@
-import { UPDATE_PROGRESS } from './actions'
+import { UPDATE_PROGRESS } from './actions';
 
-export function updateTestProgress(answer) {
-  return { type: UPDATE_PROGRESS, answer }
+export function updateTestProgress (answer) {
+  return { type: UPDATE_PROGRESS, answer };
 }
