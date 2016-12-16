@@ -13,7 +13,7 @@ const Test = React.createClass({
 
   render () {
     return (
-      <div className='test-page'>
+      <div className='page-overlay'>
         <TestQuestion question={this.props.question} />
         <TestQuestionForm handleSubmit={this.handleSubmit} />
       </div>

@@ -1,4 +1,6 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import SubmitForm from './SubmitForm'
 
 const TestQuestionForm = React.createClass({
   render () {
@@ -19,9 +21,8 @@ const TestQuestionForm = React.createClass({
             <label className='test-response' htmlFor='nearlyEveryDay' >Nearly Every Day</label>
           </div>
 
-          <div className='submit-button'>
-            <button type='submit' className='button'>Next</button>
-          </div>
+          <SubmitForm continue={this.props.continue} />
+
         </form>
 
       </div>
@@ -29,5 +30,11 @@ const TestQuestionForm = React.createClass({
   }
 })
 
-export default TestQuestionForm
+const mapStateToProps = (state) => {
+  return {
+    continue: state.continue
+  }
+}
+
+export default connect(mapStateToProps)(TestQuestionForm)
 

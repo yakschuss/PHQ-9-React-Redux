@@ -64,13 +64,12 @@ html, body{
 
 /* Test */
 
-.test-page {
+.page-overlay {
   position: absolute;
   top: 15px;
   left: 15px;
   right: 15px;
   bottom: 15px;
-  /* background-color: rgba(220, 220, 220, .8); */
   padding: 15px 30px;
   border-radius: 5px;
   display: flex;
@@ -154,6 +153,73 @@ html, body{
 .button:hover {
   background-color: white;
   color: #8295D0;
+}
+
+.result-button {
+  height: 50px;
+  background-color: #34a853;
+  color: #fff;
+  width: 170px;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 20px;
+}
+.result-button:hover {
+  background-color: white;
+  color: #34a853;
+}
+
+
+/* Result */
+
+.grey-background {
+  background-color: rgba(220, 220, 220, .8);
+}
+
+/* ResultsND */
+
+.results-div-non-depressed {
+  font-size: 50px;
+  color: #82318A;
+}
+
+/* ResultsD */
+
+.results-div-depressed {
+  font-size: 30px;
+  color: #82318A;
+}
+.dr-list-enclosing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.drs-names {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.doctor-response {
+  border: 2px solid #82318A;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.pick-a-doctor input[type=radio] {
+  display: none;
+}
+
+.pick-a-doctor input[type=radio]:checked + .doctor-response {
+  background-color: #82318A;
+  color: white;
+}
+
+.doctors-button {
+  margin-top: 30px;
 }
 
 
