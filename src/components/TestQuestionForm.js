@@ -7,9 +7,9 @@ const TestQuestionForm = React.createClass({
     let testQuestion;
 
     if (this.props.continue) {
-       testQuestion = 'selection'
+      testQuestion = 'selection';
     } else {
-       testQuestion = 'selection hidden'
+      testQuestion = 'selection hidden';
     }
 
     return (

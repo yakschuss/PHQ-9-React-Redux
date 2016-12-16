@@ -5,9 +5,9 @@ const TestQuestion = React.createClass({
     let testQuestion;
 
     if (this.props.hideElement) {
-       testQuestion = 'test-question-card'
+      testQuestion = 'test-question-card';
     } else {
-       testQuestion = 'test-question-card hidden'
+      testQuestion = 'test-question-card hidden';
     }
 
     return (

@@ -6,7 +6,7 @@ import { updateTestProgress } from '../redux/actionCreators';
 
 const Test = React.createClass({
   handleSubmit (e) {
-    const checkedBox = document.querySelector('input[type="radio"]:checked')
+    const checkedBox = document.querySelector('input[type="radio"]:checked');
     const value = checkedBox.value;
     this.props.dispatch(updateTestProgress(parseInt(value, 10)));
     checkedBox.checked = false;
